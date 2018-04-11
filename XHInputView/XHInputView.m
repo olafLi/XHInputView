@@ -49,6 +49,7 @@ static CGFloat keyboardAnimationDuration = 0.5;
         [_textView removeObserver:self forKeyPath:@"contentSize"];
     }
 }
+
 +(void)showWithStyle:(InputViewStyle)style configurationBlock:(void(^)(XHInputView *inputView))configurationBlock sendBlock:(BOOL(^)(NSString *text))sendBlock{
     XHInputView *inputView = [[XHInputView alloc] initWithStyle:style];
     UIWindow *window = [UIApplication sharedApplication].delegate.window;
